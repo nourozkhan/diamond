@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery2.js"></script> 
+    <script>
+        $(document).ready(function()
+        {
+            $("div").mouseenter(function()
+            {
+                $("span").addClass("q1");
+            });
+            $("div").mouseleave(function()
+            {
+                $("span").addClass("q2");
+            });
+        });
+    </script>
+    <style>
+        .q1
+        {
+            color:yellow;
+        }
+        .q2
+        {
+            color:white;
+        }
+        body
+        {
+            text-align: center;
+            background: #07071d;
+            font-size: 25px;
+            color: #cbcbef;
+        }
+        span
+        {
+            margin:0px 0px 5px 10px;
+        }
+        div
+        {
+            margin:50px auto;
+        }
+        span:hover
+        {
+            color:red;
+        }
+    </style>
+   
+</head>
+<body>
+    <div>
+         <script>
+       for(i=1;i<=10;i++)
+       {
+           for(j=1;j<=i;j++)
+           {
+           document.write("<span>*<span>");
+           }
+           document.write("<br>");
+       }
+       for(i=1;i<=10;i++)
+       {
+           for(j=9;j>=i;j--)
+           {
+           document.write("<span>*<span>");
+           }
+           document.write("<br>");
+       }
+    </script>
+    </div>
+    
+</body>
+</html>
